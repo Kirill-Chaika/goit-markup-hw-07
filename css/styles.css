@@ -116,7 +116,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
+} */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -127,7 +127,7 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
 }
-.auth-nav .header {
+/* .auth-nav .header {
     display: block;
     display: flex;
     align-items: center;
@@ -213,9 +213,9 @@ body {
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-}
+} */
 .hero-main {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -223,7 +223,7 @@ body {
     color: var(--text-color);
     margin-bottom: 30px;
 }
-.hero {
+/* .hero {
     position: relative;
     padding-top: 188px;
     padding-bottom: 200px;
@@ -237,7 +237,7 @@ body {
 
 .hero-container {
     position: relative;
-}
+} */
 
 .hero-btn {
     font-style: normal;
@@ -267,14 +267,14 @@ button .hero {
     background-color: var(--brand-color);
 }
 
-.container-portfolio .list {
+/* .container-portfolio .list {
     display: block;
     display: flex;
     flex-wrap: wrap ;
 } */
 
 /* Опис проєктів */
-/* .about h3 {
+.about h3 {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -285,15 +285,15 @@ button .hero {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.list-title {
+/* .list-title {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #757575;
     margin-top: 4px;
-}
-.about .container-about {
+} */
+.container-about-icon {
     height: 120px;
     display: flex;
     align-items: center;
@@ -305,13 +305,13 @@ button .hero {
     display: flex;
     fill: #AFB1B8;
 }
-.about .list li {
+.about-sections {
     margin-right: 24px;
     flex-basis: calc(100% - 4 * 12px);
 }
-.about .list li:last-child {
+.about-sections:last-child {
     margin-right: 0;
-} */
+}
 
 /* .list-project {
     font-weight: 400;
@@ -1015,10 +1015,8 @@ img {
 
 @media screen and (min-width: 0px) and (max-width: 479px){
     body {
-        max-width: 479px;
         display: block;
         margin: 0 auto;
-        width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         
@@ -1051,16 +1049,26 @@ img {
     }
     .hero {
         display: block;
-        max-width: 428px;
-        max-height: 432px;
+        width: 428px;
+        height: 432px;
         justify-content: center;
         text-align: center;
         padding-top: 112px;
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images-adaptive/Dark-bg.png);
+        background-size: 428px 432px;
     }
     .hero-main {
-        width: 318px;
+        margin-bottom: 72px;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+    .container-about-icon {
+        display: none;
+    }
+    .about-sections {
+        display: block;
+        align-items: center;
         margin-bottom: 72px;
     }
 }
