@@ -556,7 +556,7 @@ button .hero {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #F4F4FD;
+    color: #F4F4FD;
     border-radius: 50px;
     background-color: var(--brand-color);
 }
@@ -628,7 +628,7 @@ button .hero {
 
 
 /* Футер */
-/* .footer .logo-footer {
+.footer .logo-footer {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -672,7 +672,7 @@ button .hero {
     text-decoration: none;
     color: #757575;
     font-style: normal; 
-} */
+}
 
 /* .logo-footer {
     display: block;
@@ -804,7 +804,7 @@ button .hero {
     color: rgba(255, 255, 255, 0.6);
     margin-left: 16px;
 }
-/* .footer-form-input-icon {
+.footer-form-input-icon {
     width: 24px;
     height: 24px;
     fill: var(--text-color);
@@ -812,11 +812,11 @@ button .hero {
 .footer-form-input:focus {
     outline: none;
     border-color: var(--brand-color);
-} */
+}
 
 /* <-- modal-view --> */
 
-/* .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -881,9 +881,9 @@ button .hero {
 .modal .modal-close:focus {
     fill: var(--text-color);
     background-color: #404BBF;
-} */
+}
 
-/* .modal-form-field {
+.modal-form-field {
     display: block;
     margin-bottom: 8px;
 }
@@ -1006,7 +1006,7 @@ button .hero {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--text-color);   
-} */
+}
 img {
     display: block;
     max-width: 100%;
@@ -1031,16 +1031,24 @@ img {
         /* height: 432px; */
         /* justify-content: center; */
         /* text-align: center; */
-        /* margin: 0 auto; */
+        margin: 0 auto;
     }
     .header-container {
-        max-width: 479px;
+        display: flex;
+        max-width: 428px;
+        height: 70px;
+        padding: 24px 16px;
+        justify-content: space-between;
     }
     .header-link {
         display: flex;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+    }
+    .burger-header {
+        width: 32px;
+        height: 22px;
     }
     .auth-nav {
         display: none;
@@ -1060,7 +1068,7 @@ img {
     color: var(--brand-color);
     text-decoration: none;
     display: block;
-    margin-right: 77px;
+    margin-right: 0;
     }
     .web {
         color: var(--logo-color);
@@ -1201,5 +1209,123 @@ img {
     .regular-customers {
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+    .footer .container {
+        display: block;
+        background-color: #2E2F42;
+        padding: 96px 16px;
+    }
+    .container-footer-title {
+        display: block;
+        margin-left: 0 ;
+    }
+    .container-left  {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 72px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .container-left p {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .container-right {
+        padding-bottom: 72px;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .futter-form {
+        display: block;
+    }
+    .footer-title {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .footer-form-input {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .footer-form-submit {
+        display: flex;
+        margin: 0 auto;
+        width: 165px;
+        padding: 8px 16px;
+    }
+    .burger-header-icon {
+        display: block;
+        fill: #000000;
+    }
+    .burger-header {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+    }
+    .burger-header .icon-cross {
+        display: none;
+    }
+    .burger-header.is-open .icon-cross {
+        display: block;
+    }
+    .burger-header.is-open .burger-header-icon {
+        display: none;
+    }
+
+    .modal-close {
+        /* position: absolute; */
+        top: 34%;
+        right: 63%;
+        transform: translate(0%, -2%);
+    
+        top: 25px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        background: #E7E9FC;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        align-items: center;
+        transition: background-color var(--o-animation);
+    }
+    
+    .modal-close:hover,
+    .modal-close:focus {
+        fill: var(--text-color);
+        background-color: #404BBF;
+    }
+
+}
+
+@media screen and (min-width: 479px) and (max-width: 767px) {
+    .container {
+        width: 736px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .burger-header {
+        display: none;
+    }
+    .container-about-icon {
+        display: none;
+    }
+    .about {
+        width: 736px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 96px 0px;
+    }
+    .about-sections {
+        width: 356px;
+        margin: 0;
+        flex-basis: auto;
+    }
+    .section-description {
+        display: none;
+    }
+    .team {
+        padding: 96px 96px 108px 108px;
     }
 }
