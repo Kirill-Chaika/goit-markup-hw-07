@@ -1466,12 +1466,89 @@ img {
     display: none;
    }
    .header-link {
-    width: 1128px;
+    width: 1200px;
     margin: 0 auto;
    }
    .header-container {
     padding-left: 120px;
     padding-right: 120px;
     margin: 0 auto;
+   }
+   .hero {
+    display: block;
+    width: 1200px;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images-adaptive/people-office-desctop.jpg);
+   }
+   .about-sections {
+    margin-right: 24px;
+    flex-basis: calc(100% - 4 * 12px);
+   }
+   .list {
+    display: flex;
+   }
+   .about {
+    display: block;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 36px;
+   }
+   .list-project {
+    text-align: left;
+   }
+   .section-description {
+    display: block;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 36px;
+   }
+   .section-img {
+    display: flex;
+    justify-content: space-between;
+   }
+   .section-team {
+        display: block;
+        width: 1200px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 120px 36px;
+   }
+   .team {
+    display: flex;
+   }
+   .icon-team {
+    display: flex;
+   }
+   .section-team-container {
+    padding: 32px 16px;
+   }
+   .regular-customers {
+    display: block;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 36px;
+   }
+   .icon-regular-customers {
+    display: flex;
+   }
+   .footer {
+    display: block;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 36px;
    }
 }
