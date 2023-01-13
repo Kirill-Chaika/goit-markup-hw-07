@@ -1461,8 +1461,12 @@ img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-   .burger-header {
+@media screen and (min-width: 768px) {
+   body {
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+    .burger-header {
     display: none;
    }
    .header-link {
@@ -1543,12 +1547,14 @@ img {
    .icon-regular-customers {
     display: flex;
    }
-   .footer {
+   .footer-container {
     display: block;
+    background-color: #2E2F42;
     width: 1200px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 120px 36px;
+    padding: 108px 36px;
+    display: flex;
+   }
+   .footer-contauner-tablet {
+    display: flex;
    }
 }
