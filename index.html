@@ -25,9 +25,9 @@
         <a class="logo" href="./index.html"
           >Web<span class="web">Studio</span></a
         >
-        <button type="button" class="burger-header is-open" js-menu-container>
-          <svg class=""  >
-                <use class="icon-cross" href="./images-2/icons.svg#icon-close" width="24" height="24"></use>
+        <button type="button" class="burger-header" data-modal-mobile-open>
+          <svg class="burger-header-fone">
+                <!-- <use class="icon-cross" href="./images-2/icons.svg#icon-close" width="24" height="24"></use> -->
                 <use class="burger-header-icon" href="./images-2/icons.svg#burger" width="32px" height="22px" aria-label="переключатель мобильного меню"></use>
           </svg>
         </button>
@@ -146,10 +146,15 @@
           <h2 class="section-description-text">What are we doing</h2>
           <ul class="section-img">
             <li>
-              <img src="./images-3/img-mac.jpg" alt="Працюємо" width="360" />
+              <img 
+              srcset="./images-adaptive/monitor.jpg 1x, ./images-adaptive/monitor@2x.jpg 2x"
+              src="./images-3/img-mac.jpg" 
+              alt="Працюємо" 
+              width="360" />
             </li>
             <li>
               <img
+                srcset="./images-adaptive/screen.jpg 1x, ./images-adaptive/screen@2x.jpg 2x"
                 src="./images-3/img-phones.jpg"
                 alt="Створюємо"
                 width="360"
@@ -157,6 +162,7 @@
             </li>
             <li>
               <img
+                srcset="./images-adaptive/screen-mac.jpg 1x, ./images-adaptive/screen-mac@2x.jpg 2x"
                 src="./images-3/img-fon-screen.jpg"
                 alt="Творимо"
                 width="360"
@@ -172,6 +178,7 @@
           <ul class="team">
             <li class="section-team-cards">
               <img
+                srcset="./images-adaptive/mark-guerrero.jpg 1x, ./images-adaptive/mark-guerrero@2x.jpg 2x"
                 src="./images-3/mark.jpg"
                 alt="Mark Guerrero"
                 width="264px"
@@ -216,7 +223,11 @@
               </div>
             </li>
             <li class="section-team-cards">
-              <img src="./images-3/tom.jpg" alt="Tom Ford" width="264px" />
+              <img 
+              srcset="./images-adaptive/tom-ford.jpg 1x, ./images-adaptive/tom-ford@2x.jpg 2x"
+              src="./images-3/tom.jpg" 
+              alt="Tom Ford" 
+              width="264px" />
               <div class="section-team-container">
                 <h3 class="list-names">Tom Ford</h3>
                 <p class="list-team">Frontend Developer</p>
@@ -258,6 +269,7 @@
             </li>
             <li class="section-team-cards">
               <img
+                srcset="./images-adaptive/camila-garcia.jpg 1x, ./images-adaptive/camila-garcia@2x.jpg 2x"
                 src="./images-3/camila.jpg"
                 alt="Camila Garcia"
                 width="264px"
@@ -303,6 +315,7 @@
             </li>
             <li class="section-team-cards">
               <img
+                srcset="./images-adaptive/daniel-wilson.jpg 1x, ./images-adaptive/daniel-wilson@2x.jpg 2x"
                 src="./images-3/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264px"
@@ -425,7 +438,7 @@
        <div class="container-footer-title">
         <p class="footer-title">Subscribe</p>
        <form class="futter-form">
-        <label>
+        <label class="footer-title-email">
                 <span class="footer-form-input-wrapper">
                   <input class="footer-form-input" type="email" name="footer-email" required placeholder="E-mail" >
                 </span>
@@ -497,6 +510,63 @@
             
           </div>
         
+    </div>
+    <div class="mobile-backdrop is-hidden" data-modal-mobile>
+      <div class="mobile-modal">
+        <button class="mobile-modal-close is-open" type="button" data-modal-mobile-close>
+          <svg width="24" height="24" >
+                <use href="./images-2/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="header-mobile">
+          <li class="mobile-header-list"><a class="mobile-header-link" href="./index.html">Studio</a></li>
+          <li class="mobile-header-list"><a class="mobile-header-link" href="./portfolio.html">Portfolio</a></li>
+          <li class="mobile-header-list"><a class="mobile-header-link" href="#"><span class="mobile-header-contacts">Contacts</span></a></li>
+        </ul>
+        <ul class="posted-mobile">
+          <li class="mobile-posted-link">
+            <a class="posted-link-mailto" href="tel:+380961111111"> +11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-posted-link ">
+            <a class="posted-mobile-link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+          </ul>
+          <ul class="icon-team">
+                  <li class="icon-team-bloks">
+                    <a class="icon-team-links" href=""
+                      ><svg class="icon-time-icon" width="24" height="24">
+                        <use
+                          href="./images-2/icons.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-team-bloks">
+                    <a class="icon-team-links" href=""
+                      ><svg class="icon-time-icon" width="24" height="24">
+                        <use
+                          href="./images-2/icons.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-team-bloks">
+                    <a class="icon-team-links" href=""
+                      ><svg class="icon-time-icon" width="24" height="24">
+                        <use
+                          href="./images-2/icons.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-team-bloks">
+                    <a class="icon-team-links" href=""
+                      ><svg class="icon-time-icon" width="24" height="24">
+                        <use
+                          href="./images-2/icons.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+          
+      </div>
     </div>
     <!-- <script src="./modal.js"></script> -->
 

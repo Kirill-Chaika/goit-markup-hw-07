@@ -1,27 +1,35 @@
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+// (() => {
+//   const menuContainer = document.querySelector('.js-menu-container');
+//   const openMenuBtn = document.querySelector('.js-open-menu');
+//   const closeMenuBtn = document.querySelector('.js-close-menu');
 
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
+//   const toggleMenu = () => menuContainer.classList.toggle('is-open');
+//   openMenuBtn.addEventListener('click', toggleMenu);
+//   closeMenuBtn.addEventListener('click', toggleMenu);
+
+//   // Закрываем мобильное меню на более широких экранах
+//   // в случае изменения ориентации устройства.
+//   window
+//     .matchMedia('(min-width: 600px)')
+//     .addEventListener(
+//       'change',
+//       e => e.matches && menuContainer.classList.remove('is-open'),
+//     );
+// })();
+
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-mobile-open]"),
+    closeModalBtn: document.querySelector("[data-modal-mobile-close]"),
+    modal: document.querySelector("[data-modal-mobile]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
 })();
