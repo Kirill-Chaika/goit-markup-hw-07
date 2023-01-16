@@ -112,7 +112,7 @@ body {
  
 
 .container {
-    width: 1158px;
+    width: 1128px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -275,7 +275,7 @@ button .hero {
 
 /* Опис проєктів */
 .about h3 {
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -659,7 +659,7 @@ button .hero {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--brand-color);
@@ -904,7 +904,7 @@ button .hero {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     align-items: center;
-    transition: background-color var(--o-animation);
+    transition: background-color var(--o-animation), color var(--o-animation);
 }
 .modal .modal-close:hover,
 .modal .modal-close:focus {
@@ -1044,7 +1044,7 @@ img {
 
 
 
-@media screen and (min-width: 0px) and (max-width: 479px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     /* body {
         display: block;
         text-align: center;
@@ -1165,6 +1165,7 @@ img {
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        text-align: center;
     }
     .list-project {
         font-family: 'Roboto';
@@ -1188,13 +1189,17 @@ img {
         padding-top: 96px;
         padding-bottom: 128px;
     }
+    .container-icon-team-mobile {
+        width: 328px;
+        margin: 0 auto;
+    }
     .icon-team {
         display: flex;
         text-align: center;
     }
-    .icon-team li {
-
-    }
+    .icon-team-bloks {
+        margin-right: 0;
+    } 
     .team {
         display: block;
         align-items: center;   
@@ -1258,20 +1263,21 @@ img {
         margin-left: 0 ;
     }
     .container-left  {
+        width: 268px;
         text-align: center;
         margin: 0 auto;
-        padding-bottom: 72px;
-        padding-left: 80px;
-        padding-right: 80px;
+        margin-bottom: 72px;
+        
     }
     .container-left p {
         width: 100%;
         margin-top: 16px;
+        text-align: left;
     }
     .container-right {
-        padding-bottom: 72px;
-        padding-left: 92px;
-        padding-right: 92px;
+        width: 208px;
+        margin: 0 auto;
+        margin-bottom: 72px;
     }
     .footer {
         width: 428px;
@@ -1335,7 +1341,7 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 428px;
-        height: 796px;
+        height: 100%;
         background: #FFFFFF;
         border-radius: 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1388,6 +1394,9 @@ img {
     .mobile-header-link:focus {
         color: #404BBF;
     }
+    .moobile-acent {
+        color: #404BBF;
+    }
     .posted-mobile {
         display: block;
     }
@@ -1401,7 +1410,7 @@ img {
         font-size: 36px;
         line-height: 1.11;
         text-transform: capitalize;
-        color: #434455;
+        color: #404BBF;
         transition: color 250ms var(--o-animation);
     }
     .posted-mobile-link {
@@ -1438,7 +1447,7 @@ img {
 
 }
 
-@media screen and (min-width: 479px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .container {
         width: 736px;
         display: flex;
@@ -1602,33 +1611,33 @@ img {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
    body {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1440px;
+    /* margin: 0 auto; */
    }
     .burger-header {
     display: none;
    }
-   .posted a {
+   .link {
     margin-right: 40px;
    }
    .link-mailto a {
     margin-right: 0;
    }
-   .header-link {
+   /* .header-link {
     width: 1200px;
     margin: 0 auto;
-   }
+   } */
    .header-container {
-    padding-left: 120px;
-    padding-right: 120px;
-    margin: 0 auto;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+    /* margin: 0 auto; */
    }
    .hero {
     display: block;
-    width: 1200px;
-    height: 600px;
+    max-width: 1440px;
+    /* height: 600px; */
     justify-content: center;
     text-align: center;
     margin: 0 auto;
@@ -1639,7 +1648,7 @@ img {
    @media (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
        .hero {
            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images-adaptive/description/people-office-desctop@2x.jpg);
-           background-size: 1200px 600px;
+           background-size: 1440px;
        }
    }
    .about-sections {
@@ -1650,12 +1659,16 @@ img {
     display: flex;
    }
    .about {
-    display: block;
-    width: 1200px;
+    /* display: block; */
+    /* width: 1200px; */
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    padding: 120px 36px;
+    /* padding: 120px 36px; */
+   }
+   .about-container {
+    width: 1128px;
+    margin: 0 auto;
    }
    .list-project {
     text-align: left;
@@ -1665,7 +1678,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
    }
-   .section-description {
+   /* .section-description {
     display: block;
     width: 1200px;
     justify-content: center;
@@ -1673,6 +1686,10 @@ img {
     margin: 0 auto;
     padding: 120px 36px;
     padding-top: 0;
+   } */
+   .section-description-container {
+    width: 1128px;
+    margin: 0 auto;
    }
    .section-description-text {
     font-family: 'Roboto';
@@ -1690,19 +1707,26 @@ img {
     display: flex;
     justify-content: space-between;
    }
-   .section-team {
+   /* .section-team {
         display: block;
         width: 1200px;
         justify-content: center;
         text-align: center;
         margin: 0 auto;
         padding: 120px 36px;
+   } */
+   .section-team-containers {
+    width: 1128px;
+    margin: 0 auto;
    }
    .team {
     display: flex;
    }
    .icon-team {
     display: flex;
+   }
+   .icon-team-bloks:last-child {
+    margin-right: 0;
    }
    .icon-regular-customers li:nth-last-child(2n) {
     margin-left: 24px;
@@ -1713,23 +1737,33 @@ img {
    .section-team-container {
     padding: 32px 16px;
    }
-   .regular-customers {
+   /* .regular-customers {
     display: block;
     width: 1200px;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
     padding: 120px 36px;
+   } */
+   .regular-customers-container {
+    width: 1128px;
+    margin: 0 auto;
    }
    .icon-regular-customers {
     display: flex;
    }
+   .footer {
+    background-color: #2E2F42;
+    max-width: 1440px;
+    margin: 0;
+   }
    .footer-container {
     display: block;
-    background-color: #2E2F42;
-    width: 1200px;
-    padding: 108px 36px;
+    /* background-color: #2E2F42; */
+    width: 1128px;
+    padding: 108px 0px;
     display: flex;
+    margin: 0 auto;
    }
    .footer-contauner-tablet {
     display: flex;
