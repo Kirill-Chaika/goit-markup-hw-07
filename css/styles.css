@@ -1556,6 +1556,7 @@ img {
     .section-team {
         width: 768px;
         padding: 96px 108px 104px 108px ;
+        margin: 0 auto;
     }
     .icon-team {
         display: flex;
@@ -1577,6 +1578,7 @@ img {
     .regular-customers {
         width: 768px;
         padding: 96px 108px;
+        margin: 0 auto;
         
     }
     .icon-regular-customers li {
@@ -1591,6 +1593,7 @@ img {
         background-color: #2E2F42;
         width: 768px;
         padding: 96px 164px 96px 108px;
+        margin: 0 auto;
     }
     .footer-contauner-tablet {
         display: flex;
