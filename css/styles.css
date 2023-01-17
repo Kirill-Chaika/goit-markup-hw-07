@@ -136,7 +136,7 @@ body {
 .posted a {
     display: block;
     padding-top: 24px;
-    padding-bottom: 28px;
+    padding-bottom: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1056,7 +1056,7 @@ img {
     } */
     .container {
         display: block;
-        width: 428px;
+        width: 100%;
         
         /* height: 432px; */
         /* justify-content: center; */
@@ -1118,8 +1118,8 @@ img {
     @media (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
         .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images-adaptive/Mobile/mobile-hero-bg@2x.jpg);
-        background-size: 428px 432px;
-        }
+        background-size: cover;
+    }
     }
     .hero-main {
         margin-bottom: 72px;
@@ -1273,7 +1273,6 @@ img {
     }
     .container-left p {
         width: 100%;
-        margin-top: 16px;
         text-align: left;
     }
     .container-right {
@@ -1448,8 +1447,37 @@ img {
         pointer-events: none;
     }
     
-    
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+    .header-container {
+        width: 100%;
+    }
 
+    .about-container {
+        width: 100%;
+    }
+    .section-team-containers {
+        width: 100%;
+    }
+    .regular-customers-container {
+        width: 100%;
+    }
+    .footer-container {
+        width: 100%;
+    }
+    .hero {
+        width: 100%;
+    }
+    .icon-regular-customers li a {
+        width: 140px;
+    }
+    .mobile-modal {
+        width: 100%;
+    }
+    .modal {
+        min-width: 320px;
+        max-height: 650px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
