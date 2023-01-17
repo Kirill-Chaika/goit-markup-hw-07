@@ -292,7 +292,7 @@ button .hero {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: #434455;
     margin-top: 4px;
 }
 .container-about-icon {
@@ -488,11 +488,11 @@ button .hero {
 
 }
 .headlines {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #2E2F42;
     cursor: pointer;
 }
 .list-portfolio li a  {
@@ -1806,7 +1806,7 @@ img {
     background-color: #2E2F42;
     /* max-width: 1440px; */
     /* margin: 0; */
-    padding: 108px 0px;
+    padding: 100px 0px;
    }
    .footer-container {
     display: block;
